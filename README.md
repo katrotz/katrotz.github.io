@@ -1,2 +1,1 @@
-# katrotz.github.io
-katrotz@github
+# [Live website](http://katrotz.space)

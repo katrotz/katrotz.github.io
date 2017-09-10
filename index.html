@@ -1,36 +1,78 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>katrotz</title>
+        <meta name="description" content="katrotz, web, frontend, javascript, programming, ES6">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+        <link rel="icon" type="image/png" href="favicon.png">
 
-    <title>Katrotz.GitHub.io by katrotz</title>
-  </head>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body id="particles-js">
+        <div class="placeholder">
+            <div class="name">
+                <img id="octobiwan" src="img/octobiwan.png"/>
+                <a href="https://github.com/katrotz" title="My Github Profile Page" id="github-link">katrotz <span class="second">space</span></a>
+            </div>
+            <div class="motto">frontend developer @ webtrekk</div>
+        </div>
 
-  <body>
+        <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
 
-    <header>
-      <div class="container">
-        <h1>Katrotz.GitHub.io</h1>
-        <h2>katrotz@github</h2>
+        <!-- Google Analytics -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
-        <section id="downloads">
-          <a href="https://github.com/katrotz" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+            ga('create', 'UA-59221131-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        
+        <!-- Mixpanel -->
+        <script type="text/javascript">
+            (function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+            for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+            mixpanel.init("47fec55f2d2debacd192f716832c72a0");
+            
+            mixpanel.track("Page visit");
+            
+            document.querySelector('#github-link').addEventListener('click', function() {mixpanel.track("Access github link");});
+        </script>
+        
+        <!--Kissmetrics-->
+        <script type="text/javascript">var _kmq = _kmq || [];
+            var _kmk = _kmk || '8999caceefd886ae2de6544b8db0c10f99f5c5dd';
+            function _kms(u){
+              setTimeout(function(){
+                var d = document, f = d.getElementsByTagName('script')[0],
+                s = d.createElement('script');
+                s.type = 'text/javascript'; s.async = true; s.src = u;
+                f.parentNode.insertBefore(s, f);
+              }, 1);
+            }
+            _kms('//i.kissmetrics.com/i.js');
+            _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+        </script>
 
-    <div class="container">
-      <section id="main_content">
-        <h1>
-<a id="js-i-promise" class="anchor" href="#js-i-promise" aria-hidden="true"><span class="octicon octicon-link"></span></a>JS, I Promise!</h1>
-      </section>
-    </div>
-
-    
-  </body>
+        <!--Segment-->
+        <script type="text/javascript">
+            !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+                analytics.load('MrqplomkugLZqlczMC6K7f6CcXJEGHnT');
+                analytics.page();
+            }}();
+        </script>
+    </body>
 </html>
